@@ -7,15 +7,17 @@ CREATE TABLE CUSTOMER
 	C_BALANCE NUMBER(20,10), 
 	 PRIMARY KEY (C_ID));
 	 
-insert into customer(name, email, c_balance, c_id) values ('Radha', 'radha@gmail.com', 10000, 01);
-insert into customer(name, email, c_balance, c_id) values ('vasudev', 'vasudev@gmail.com', 10000, 02);
-insert into customer(name, email, c_balance, c_id) values ('astha', 'astha@gmail.com', 10000, 03);
-insert into customer(name, email, c_balance, c_id) values ('ram', 'ram@gmail.com', 10000, 04);
-insert into customer(name, email, c_balance, c_id) values ('shyam', 'shyam@gmail.com', 10000, 05);
-insert into customer(name, email, c_balance, c_id) values ('hari', 'hari@gmail.com', 10000, 06);
-insert into customer(name, email, c_balance, c_id) values ('madhav', 'madhav@gmail.com', 10000, 07);
-insert into customer(name, email, c_balance, c_id) values ('lucy', 'lucy@gmail.com', 10000, 08);
-insert into customer(name, email, c_balance, c_id) values ('gauri', 'gauri@gmail.com', 10000, 09);
+insert into customer(name, email, c_balance, c_id) values ('Radha', 'radha989@gmail.com', 10000, 01);
+insert into customer(name, email, c_balance, c_id) values ('Vasudev', 'vasudev11@gmail.com', 10000, 02);
+insert into customer(name, email, c_balance, c_id) values ('Astha', 'astha.p3@gmail.com', 10000, 03);
+insert into customer(name, email, c_balance, c_id) values ('Nistha', 'nis728@gmail.com', 10000, 04);
+insert into customer(name, email, c_balance, c_id) values ('Ayushi', 'ay892@gmail.com', 10000, 05);
+insert into customer(name, email, c_balance, c_id) values ('John', 'john.wick@gmail.com', 10000, 06);
+insert into customer(name, email, c_balance, c_id) values ('Tim', 'tim92@gmail.com', 10000, 07);
+insert into customer(name, email, c_balance, c_id) values ('Prateek', 'pta78@gmail.com', 10000, 08);
+insert into customer(name, email, c_balance, c_id) values ('Neha', 'neha123@gmail.com', 10000, 09);
+insert into customer(name, email, c_balance, c_id) values ('Ram', 'ram001@gmail.com', 10000, 10);
+
 
 drop table TRANSACTION;
 
