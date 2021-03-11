@@ -1,0 +1,409 @@
+.cube {
+	border: 1px solid green;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	height: 50px;
+	width: 200px;
+	border-radius: 20px 5px 20px 0px;
+	position: relative;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font: 15px sans-serif;
+	font-weight: 300;
+	text-shadow: 0 0 20px #fff;
+	text-transform: uppercase;
+	-webkit-animation: breath2 2s 0.5s infinite alternate;
+	animation: breath2 2s 0.5s infinite alternate;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+.cube:before {
+	content: "";
+	display: block;
+	width: calc(100% - 22px);
+	height: calc(50px - 8px);
+	-webkit-animation: breath 2s infinite alternate;
+	animation: breath 2s infinite alternate;
+	left: 10px;
+	top: 3px;
+	position: absolute;
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 15px 3px 15px 3px;
+}
+
+.cube.fire {
+	border-color: #ffeca8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 138, 48,
+		0.6)), to(rgba(240, 96, 29, 0.6)));
+	background-image: linear-gradient(to bottom, rgba(255, 138, 48, 0.6),
+		rgba(240, 96, 29, 0.6));
+	box-shadow: 0 0 70px rgba(255, 138, 48, 0.6), 0 5px 20px
+		rgba(255, 138, 48, 0.6), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
+	color: #ffeca8;
+}
+
+.cube.fire:before {
+	box-shadow: inset 0 0 30px 0 #ffeca8;
+}
+
+.cube.ice {
+	border-color: #a8ecff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 138, 255,
+		0.5)), to(rgba(29, 96, 240, 0.5)));
+	background-image: linear-gradient(to bottom, rgba(48, 138, 255, 0.5),
+		rgba(29, 96, 240, 0.5));
+	box-shadow: 0 0 70px rgba(48, 138, 255, 0.5), 0 5px 20px
+		rgba(48, 138, 255, 0.5), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
+	color: #a8ecff;
+}
+
+.cube.ice:before {
+	box-shadow: inset 0 0 30px 0 #a8ecff;
+}
+
+.cube:hover.fire {
+	box-shadow: 0 0 70px rgba(255, 138, 48, 0.8), 0 5px 20px
+		rgba(255, 138, 48, 0.8), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
+}
+
+.cube:hover.fire:before {
+	box-shadow: inset 0 0 50px 0 #ffeca8;
+}
+
+.cube:hover.ice {
+	box-shadow: 0 0 70px rgba(48, 138, 255, 0.8), 0 5px 20px
+		rgba(48, 138, 255, 0.8), inset 0 1px #a8ecff, inset 0 -1px #a8ecff;
+}
+
+.cube:hover.ice:before {
+	box-shadow: inset 0 0 50px 0 #a8ecff;
+}
+
+.cube+.cube {
+	margin-top: 15px;
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+@
+-webkit-keyframes breath { 0% {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+100%
+{
+-webkit-transform
+
+
+:
+
+ 
+
+scaleX
+
+
+(0
+.95
+
+
+);
+transform
+
+
+:
+
+ 
+
+scaleX
+
+
+(0
+.95
+
+
+);
+}
+}
+@
+keyframes breath { 0% {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+100%
+{
+-webkit-transform
+
+
+:
+
+ 
+
+scaleX
+
+
+(0
+.95
+
+
+);
+transform
+
+
+:
+
+ 
+
+scaleX
+
+
+(0
+.95
+
+
+);
+}
+}
+@
+-webkit-keyframes breath2 { 0% {
+	-webkit-transform: skewX(-10deg) scaleX(1);
+	transform: skewX(-10deg) scaleX(1);
+}
+
+100%
+{
+-webkit-transform
+
+
+:
+
+ 
+
+skewX
+
+
+(-10
+deg
+)
+
+ 
+
+scaleX
+
+
+(0
+.95
+
+
+);
+transform
+
+
+:
+
+ 
+
+skewX
+
+
+(-10
+deg
+)
+
+ 
+
+scaleX
+
+
+(0
+.95
+
+
+);
+}
+}
+@
+keyframes breath2 { 0% {
+	-webkit-transform: skewX(-10deg) scaleX(1);
+	transform: skewX(-10deg) scaleX(1);
+}
+
+100%
+{
+-webkit-transform
+
+
+:
+
+ 
+
+skewX
+
+
+(-10
+deg
+)
+
+ 
+
+scaleX
+
+
+(0
+.95
+
+
+);
+transform
+
+
+:
+
+ 
+
+skewX
+
+
+(-10
+deg
+)
+
+ 
+
+scaleX
+
+
+(0
+.95
+
+
+);
+}
+}
+/*
+
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+
+*/
+.responstable {
+	margin: 1em 0;
+	width: 100%;
+	overflow: hidden;
+	background: #FFF;
+	color: #024457;
+	border-radius: 10px;
+	border: 1px solid #167F92;
+}
+
+.responstable tr {
+	border: 1px solid #D9E4E6;
+}
+
+.responstable tr:nth-child(odd) {
+	background-color: #EAF3F3;
+}
+
+.responstable th {
+	display: none;
+	border: 1px solid #FFF;
+	background-color: #167F92;
+	color: #FFF;
+	padding: 1em;
+}
+
+.responstable th:first-child {
+	display: table-cell;
+	text-align: center;
+}
+
+.responstable th:nth-child(2) {
+	display: table-cell;
+}
+
+.responstable th:nth-child(2) span {
+	display: none;
+}
+
+.responstable th:nth-child(2):after {
+	content: attr(data-th);
+}
+
+@media ( min-width : 480px) {
+	.responstable th:nth-child(2) span {
+		display: block;
+	}
+	.responstable th:nth-child(2):after {
+		display: none;
+	}
+}
+
+.responstable td {
+	display: block;
+	word-wrap: break-word;
+	max-width: 7em;
+}
+
+.responstable tr:hover {
+	background-color: #7CE1F4;
+}
+
+.responstable td:first-child {
+	display: table-cell;
+	text-align: center;
+	border-right: 1px solid #D9E4E6;
+}
+
+@media ( min-width : 480px) {
+	.responstable td {
+		border: 1px solid #D9E4E6;
+	}
+}
+
+.responstable th, .responstable td {
+	text-align: left;
+	margin: .5em 1em;
+}
+
+@media ( min-width : 480px) {
+	.responstable th, .responstable td {
+		display: table-cell;
+		padding: 1em;
+	}
+}
+
+body {
+	padding: 0 2em;
+	font-family: Arial, sans-serif;
+	color: #024457;
+	background: #f2f2f2;
+}
+
+h1 {
+	font-family: Verdana;
+	font-weight: normal;
+	color: #024457;
+}
+
+h1 span {
+	color: #167F92;
+}
+
+.menutab tr:hover {
+	
+}
